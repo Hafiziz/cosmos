@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>COSMOS</title>
     <style>
-        *{
+       *{
 
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-        }
+}
 body{
 
 
@@ -28,7 +28,7 @@ width: 100vw;
 height: 55px;
 background-color: #320a52;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
+position: fixed;
 border-bottom-left-radius: 1rem;
 border-bottom-right-radius: 1rem;
 
@@ -122,7 +122,6 @@ position: relative;
 right: -200px;
 transition-duration: 0.5s;
 margin-top: 3.4rem;
- 
 
 
 }
@@ -133,6 +132,7 @@ text-align: center;
 }
 .ul2{
 list-style-type: none;
+
 }
 .li2{
 padding-top: 1rem;
@@ -527,15 +527,14 @@ border-top-right-radius: 1rem;
 .li1{
 display: none;
 }
-    
 .btn{
 display: flex;
-margin-left: 22rem;
-position: relative;
+justify-content: right;
 
+position: relative;
+right: 2rem;
 top: -0.8rem;
 }
-    
 .btn:hover{
 opacity: 0.8;
 cursor: pointer;
@@ -570,13 +569,18 @@ margin: auto;
 .planet-head-p{
 margin: auto;
 width: 90%;
-    
 }
-.sun{
-    position: relative;
- top: 5px;
-    
+
+
+
+
+
+
+
+
 }
+
+
 
 
     </style>
@@ -947,8 +951,6 @@ let up = document.querySelector(".btn");
 
  let sun = document.querySelector(".sun");
  let sunHeadP = document.querySelector(".sun-head-p");
-        
- let socbar = document.querySelector(".socbar");
 
 
  let active = false;
@@ -961,15 +963,13 @@ let active2 = false;
  {
      active=true;
      inResp.style.right="0px";
-     socbar.style.borderBottomRightRadius="0rem"
-//inResp.style.position="fixed";
+
  }
  else{
 
      active=false;
      inResp.style.right="-200px";
-    socbar.style.borderBottomRightRadius="1rem";
-   //  inResp.style.position="relative";
+
  }
 
 
