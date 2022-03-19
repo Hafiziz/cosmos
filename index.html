@@ -946,6 +946,8 @@ let up = document.querySelector(".btn");
 
  let sun = document.querySelector(".sun");
  let sunHeadP = document.querySelector(".sun-head-p");
+        
+ let socbar = document.querySelector(".socbar");
 
 
  let active = false;
@@ -958,13 +960,14 @@ let active2 = false;
  {
      active=true;
      inResp.style.right="-200px";
+     socbar.style.borderBottomRightRadius="0rem"
 
  }
  else{
 
      active=false;
      inResp.style.right="-400px";
-
+    socbar.style.borderBottomRightRadius="1rem"
  }
 
 
