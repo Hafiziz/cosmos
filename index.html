@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+
+
+background-color: #5f3d7a;
+}
+.socbar{
+
+width: 100vw;
+height: 55px;
+background-color: #320a52;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+position: fixed;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+
+}
+h2{
+color: white;
+letter-spacing: 2px;
+    
+}
+h2:hover{
+
+opacity: 0.8;
+transition-duration: 0.3s;
+}
+.ad{
+width: 8rem;
+height: auto;
+font-family: sans-serif;
+position: relative;
+top: 1rem;
+left: 3rem;
+display: inline-block;
+ 
+}
+.li1{
+color: white;
+padding-left: 1rem;
+padding-right: 1rem;
+font-family: sans-serif;
+transition-duration: 0.3s;
+text-align: center;
+}
+.li{
+text-decoration: none;
+position: relative;
+top: -5px;
+
+}
+
+li:hover{
+
+opacity: 0.8;
+position: relative;
+top: -1px;
+border-bottom: 1px solid yellow;
+
+
+}
+li:active{
+transition-duration: 0s;
+color: #48cae4;
+}
+.ul{
+display: flex;
+justify-content: right;
+list-style-type: none;
+position: relative;
+right: 3rem;
+
+
+}
+.title{
+text-decoration: none;
+}
+.fa-solid{
+color: white;
+
+}
+.btn{
+display: none;
+margin-left: 30rem;
+}
+.resp{
+
+width: 100%;
+height: 12.5rem;
+
+overflow: hidden;
+
+display: flex;
+justify-content: right;
+}
+.in-resp{
+
+width: 12.5rem;
+height: 150px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+background-color: #320a52;
+border-bottom-left-radius: 1rem;
+position: relative;
+right: -200px;
+transition-duration: 0.5s;
+margin-top: 3.4rem;
+
+
+}
+.lia{
+text-decoration: none;
+color: white;
+text-align: center;
+}
+.ul2{
+list-style-type: none;
+}
+.li2{
+padding-top: 1rem;
+padding-bottom: 1rem;
+font-family: sans-serif;
+}
+.li2:hover{
+border-bottom: 1px solid white;
+border-top: 1px solid white;
+transition-duration: 0.3s;
+
+}
+.sec{
+width: 70%;
+height: 150px;
+margin: auto;
+
+margin-top: -200px;
+}
+.ilkp{
+font-size: 2.5rem;
+font-family: sans-serif;
+color: white;
+font-weight:bold;
+margin-top: 2rem;
+
+}
+.ikip{
+
+color: white;
+}
+.p{
+display: flex;
+justify-content: center;
+align-items: center;
+
+height: 100%;
+}
+.fa-solid{
+margin-right: 10px;
+}
+.box{
+width: 70%;
+height: 100%;
+background-color: #48cae4;
+margin: auto;
+padding: 20px 15px;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+display: block;
+
+
+}
+.sun{
+width: 250px;
+height: 250px;
+cursor: pointer;
+border-radius: 50%;
+margin-right: 50px;
+
+
+}
+.mars{
+width: 250px;
+height: 250px;
+cursor: pointer;
+border-radius: 50%;
+margin-right: 50px;
+
+
+}
+.venera{
+width: 250px;
+height: 250px;
+cursor: pointer;
+border-radius: 50%;
+margin-right: 50px;
+
+
+}
+
+.yupiter{
+width: 250px;
+height: 250px;
+cursor: pointer;
+border-radius: 50%;
+margin-right: 50px;
+
+
+}
+.earth{
+width: 250px;
+height: 250px;
+cursor: pointer;
+border-radius: 50%;
+margin-right: 50px;
+
+
+}
+.neptun{
+width: 250px;
+height: 250px;
+cursor: pointer;
+border-radius: 50%;
+margin-right: 50px;
+
+
+}
+.uran{
+width: 290px;
+height:300px;
+cursor: pointer;
+border-radius: 50%;
+margin-right: 12px;
+
+position: relative;
+left: -18px;
+}
+.saturn{
+width: 350px;
+height: 270px;
+cursor: pointer;
+border-radius: 50%;
+margin-right: 50px;
+position: relative;
+left: -18px;
+margin-right: 12px;
+}
+.sun{
+width: 250px;
+height: 250px;
+cursor: pointer;
+border-radius: 50%;
+margin-right: 50px;
+
+
+}
+.sun:hover{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.sun:avtive{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.mars:hover{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.mars:avtive{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+
+
+.venera:hover{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.venera:avtive{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+
+
+
+.yupiter:hover{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.yupiter:avtive{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+
+
+.earth:hover{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.earth:avtive{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+
+
+.neptun:hover{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.neptun:avtive{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+
+
+.uran:hover{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.uran:avtive{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+
+.saturn:hover{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.saturn:avtive{
+transform: scale(1.2) rotate(1000deg);
+transition-duration: 5s;
+}
+.img1{
+width: 100%;
+height: 100%;
+}
+.img2{
+width: 100%;
+height: 100%;
+}
+.sun-head-p{
+display: none;
+ width: 48vw;
+ height: 100%;
+ background-color: #4a2b62;
+ padding: 20px;
+ font-family: sans-serif;
+ color: white;
+ border-radius: 1rem;
+ transition-duration: 0.5s;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.mars-head-p{
+display: none;
+width: 48vw;
+height: 100%;
+background-color: #4a2b62;
+padding: 20px;
+font-family: sans-serif;
+color: white;
+border-radius: 1rem;
+transition-duration: 0.5s;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.venera-head-p{
+display: none;
+ width: 48vw;
+ height: 100%;
+ background-color: #023e8a;
+ padding: 20px;
+ font-family: sans-serif;
+ color: white;
+ border-radius: 1rem;
+ transition-duration: 0.5s;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.yupiter-head-p{
+display: none;
+ width: 48vw;
+ height: 100%;
+ background-color: #4a2b62;
+ padding: 20px;
+ font-family: sans-serif;
+ color: white;
+ border-radius: 1rem;
+ transition-duration: 0.5s;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.earth-head-p{
+display: none;
+ width: 48vw;
+ height: 100%;
+ background-color: #023e8a;
+ padding: 20px;
+ font-family: sans-serif;
+ color: white;
+ border-radius: 1rem;
+ transition-duration: 0.5s;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.neptun-head-p{
+display: none;
+ width: 48vw;
+ height: 100%;
+ background-color: #4a2b62;
+ padding: 20px;
+ font-family: sans-serif;
+ color: white;
+ border-radius: 1rem;
+ transition-duration: 0.5s;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.uran-head-p{
+display: none;
+ width: 48vw;
+ height: 100%;
+ background-color: #023e8a;
+ padding: 20px;
+ font-family: sans-serif;
+ color: white;
+ border-radius: 1rem;
+ transition-duration: 0.5s;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.saturn-head-p{
+display: none;
+ width: 55vw;
+ height: 100%;
+ background-color: #4a2b62;
+ padding: 20px;
+ font-family: sans-serif;
+ color: white;
+ border-radius: 1rem;
+ transition-duration: 0.5s;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+ position: relative;
+ left: -13px;
+}
+.sun-head{
+text-align: center;
+padding-bottom: 15px;
+color: #b4ff00;
+font-size: 1.5rem;
+}
+.mars-head{
+text-align: center;
+padding-bottom: 15px;
+color: red;
+font-size: 1.5rem;
+}
+.venera-head{
+text-align: center;
+padding-bottom: 15px;
+color: green;
+font-size: 1.5rem;
+}
+.yupiter-head{
+text-align: center;
+padding-bottom: 15px;
+color: #c95982;
+font-size: 1.5rem;
+}
+.earth-head{
+text-align: center;
+padding-bottom: 15px;
+color: #655abf;
+font-size: 1.5rem;
+}
+.neptun-head{
+text-align: center;
+padding-bottom: 15px;
+color: #0077b6;
+font-size: 1.5rem;
+}
+.uran-head{
+text-align: center;
+padding-bottom: 15px;
+color: #8eb3bb;
+font-size: 1.5rem;
+}
+.saturn-head{
+text-align: center;
+padding-bottom: 15px;
+color: #baf1a3;
+font-size: 1.5rem;
+}
+.mars-p{
+text-align: center;
+}
+.marsBox{
+display: flex;
+margin-bottom: 3rem;
+}
+footer{
+width: 100%;
+height: auto;
+color: white;
+text-align: center;
+font-size: 1rem;
+font-family: sans-serif;
+background-color: #320a52;
+padding: 1rem;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+}
+
+@media only screen and (max-width: 700px){
+
+
+.li1{
+display: none;
+}
+.btn{
+display: flex;
+justify-content: right;
+
+position: relative;
+right: 2rem;
+top: -0.8rem;
+}
+.btn:hover{
+opacity: 0.8;
+cursor: pointer;
+transition-duration: 0.3s;
+}
+h2{
+position: relative;
+top: -0.4rem;
+left: -1rem;
+}
+.box{
+width: 90%;
+margin-top: 1.5rem;
+}
+.marsBox{
+display: flex;
+flex-direction: column;
+
+margin: auto;
+}
+.ilkp{
+margin: auto;
+margin-top: 4rem;
+height: 100%;
+font-size: 2rem;
+
+
+}
+.planetName{
+margin: auto;
+}
+.planet-head-p{
+margin: auto;
+width: 90%;
+}
+
+
+
+
+
+
+
+
+}
+
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="socbar">
+        <div class="ad">
+            <a href="home.html" class="title">
+                <h2>COSMOS</h2>
+            </a>
+        </div>
+
+        <div class="btn" onclick="bas();">
+            <i class="fa-solid fa-align-justify"></i>
+        </div>
+
+        <div class="hac">
+            <ul class="ul">
+                <a href="home.html" class="li">
+                    <li class="li1"> <i class="fa-solid fa-house"></i>HOME</li>
+                </a>
+                <a href="about.html" class="li">
+                    <li class="li1"><i class="fa-solid fa-address-book"></i>ABOUT</li>
+                </a>
+                <a href="contact.html" class="li">
+                    <li class="li1"><i class="fa-solid fa-circle-question"></i>CONTACT</li>
+                </a>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <div class="resp">
+
+        <div class="in-resp">
+            <ul class="ul2">
+                <a href="home.html" class="lia">
+                    <li class="li2"> <i class="fa-solid fa-house"></i>HOME</li>
+                </a>
+                <a href="about.html" class="lia">
+                    <li class="li2"><i class="fa-solid fa-address-book"></i>ABOUT</li>
+                </a>
+                <a href="contact.html" class="lia">
+                    <li class="li2"><i class="fa-solid fa-circle-question"></i>CONTACT</li>
+                </a>
+            </ul>
+
+        </div>
+
+
+    </div>
+
+    <div class="sec">
+
+        <div class="p">
+
+            <p class="ilkp">The universe is full of mysteries</p>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="box">
+        <!--SIFIRINCI BOX -->
+        <div class="marsBox">
+            <div class="sun planetName" onclick="sunBas();" ">
+            <img src=" 8.png" alt="" class="img img1">
+            </div>
+
+            <div class="sun-head-p planet-head-p">
+
+                <div class="sun-head">
+                    <p>SUN</p>
+                </div>
+                <div class="mars-p">
+                    <p>The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma,
+                        heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as
+                        visible light, ultraviolet light, and infrared radiation. It is by far the most important source
+                        of energy for life on Earth. Its diameter is about 1.39 million kilometers (864,000 miles), or
+                        109 times that of Earth. Its mass is about 330,000 times that of Earth, and it accounts for
+                        about 99.86% of the total mass of the Solar System. Roughly three quarters of the Sun's mass
+                        consists of hydrogen (~73%); the rest is mostly helium (~25%), with much smaller quantities of
+                        heavier elements, including oxygen, carbon, neon and iron.According to its spectral class, the
+                        Sun is a G-type main-sequence star (G2V). As such, it is informally, and not completely
+                        accurately, referred to as a yellow dwarf (its light is closer to white than yellow). It formed
+                        approximately 4.6 billion years ago from the gravitational collapse of matter within a region of
+                        a large molecular cloud. Most of this matter gathered in the center, whereas the rest flattened
+                        into an orbiting disk that became the Solar System. The central mass became so hot and dense
+                        that it eventually initiated nuclear fusion in its core. It is thought that almost all stars
+                        form by this process.</p>
+                </div>
+            </div>
+
+        </div>
+        <!--BIRINCI BOX -->
+        <div class="marsBox">
+            <div class="mars planetName" onclick="marsBas();" ">
+            <img src=" 1.png" alt="" class="img img1">
+            </div>
+
+            <div class="mars-head-p planet-head-p">
+
+                <div class="mars-head">
+                    <p>MARS</p>
+                </div>
+                <div class="mars-p">
+                    <p>Mars, an obsolete name in the east, is Mars - the fourth closest planet to the Sun in the solar
+                        system and the second smallest after Mercury. Named after the god of war in Roman mythology, the
+                        widespread spread of iron oxide on the surface of this planet gives it a red appearance, and it
+                        is
+                        often described as a "red planet". Mars is a terrestrial planet (mostly composed of silicate
+                        rocks
+                        and metals) with a thin atmosphere and surface features reminiscent of craters formed after a
+                        lunar
+                        collision, as well as volcanoes, valleys, deserts, and polar ice caps. The period of rotation
+                        and
+                        the seasons of Mars are similar to those of Earth; the inclination of the axis forms the
+                        seasons.
+                        Mars is the second highest mountain in the solar system (the first highest on the planet) -
+                        Mount
+                        Olympus and one of the largest canyons, Valles Marineris. The smooth Borealis basin in the
+                        Northern
+                        Hemisphere covers 40% of the planet and may be a feature of a giant collision.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--IKINCI BOX -->
+
+
+        <div class="marsBox">
+            <div class="venera planetName" onclick="veneraBas();" ">
+            <img src=" 2.png" alt="" class="img img2">
+            </div>
+
+            <div class="venera-head-p planet-head-p">
+
+                <div class="venera-head">
+                    <p>VENERA</p>
+                </div>
+                <div class="mars-p">
+                    <p>The Venera (Russian: Вене́ра, pronounced [vʲɪˈnʲɛrə], which means "Venus" in Russian) program was
+                        the name given to a series of space probes developed by the Soviet Union between 1961 and 1984
+                        to gather information about the planet Venus. Ten probes successfully landed on the surface of
+                        the planet, including the two Vega program and Venera-Halley probes, while thirteen probes
+                        successfully entered the Venusian atmosphere. Due to the extreme surface conditions on Venus,
+                        the probes could only survive for a short period on the surface, with times ranging from 23
+                        minutes to two hours.
+                        Space probe Venera on Venus's surface (artist recreation).
+                        The Venera program established a number of precedents in space exploration, among them being the
+                        first human-made devices to enter the atmosphere of another planet (Venera 3 on 1 March 1966),
+                        the first to make a soft landing on another planet (Venera 7 on 15 December 1970), the first to
+                        return images from another planet's surface (Venera 9 on 8 June 1975), the first to record
+                        sounds on another planet (Venera 13 on 30 October 1981), and the first to perform
+                        high-resolution radar mapping scans (Venera 15 on 2 June 1983).</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--UCUNCU BOX-->
+        <div class="marsBox">
+            <div class="yupiter planetName" onclick="yupiterBas();" ">
+            <img src=" 3.png" alt="" class="img img2">
+            </div>
+
+            <div class="yupiter-head-p planet-head-p">
+
+                <div class="yupiter-head">
+                    <p>JUPITER</p>
+                </div>
+                <div class="mars-p">
+                    <p>Jupiter is the fifth largest planet in the solar system and the first largest. Although Jupiter
+                        is one thousandth of the mass of the Sun, it is a gas giant with a mass 2.5 times the mass of
+                        the other planets. Jupiter has been known to astronomers since ancient times. Its name comes
+                        from Jupiter, the main deity in Roman mythology. Jupiter has enough light to create a shadow on
+                        Earth. It is the third natural celestial body in the night sky after the Moon and Venus.
+                        Although Jupiter is mainly composed of hydrogen, a quarter of its mass is Helium. Jupiter does
+                        not have a rocky surface like other gas giants, but it is likely to have a nucleus composed of
+                        solids. Due to its rapid rotation around its axis, the planet is below the poles and above the
+                        equator. Observations of the planet's outer atmosphere are made up of strips that can be
+                        observed, and hurricanes are observed at the intersections of these sections. An example of this
+                        is the Great Red Spot, which has been observed by telescopes since the 17th century. Jupiter has
+                        a weak ring and a strong magnetosphere surrounding it. Jupiter has 79 known satellites, four of
+                        which, called Galileo satellites, were discovered in 1610 by Galileo Galilei. Ganymede, the
+                        largest of Galileo's satellites, is larger than Mercury.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--DORDUNCU BOX-->
+        <div class="marsBox">
+            <div class="earth planetName" onclick="earthBas();" ">
+            <img src=" 4.png" alt="" class="img img2">
+            </div>
+
+            <div class="earth-head-p planet-head-p">
+
+                <div class="earth-head">
+                    <p>EARTH</p>
+                </div>
+                <div class="mars-p">
+                    <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life.
+                        While large amounts of water can be found throughout the Solar System, only Earth sustains
+                        liquid surface water. About 71% of Earth's surface is made up of the ocean, dwarfing Earth's
+                        polar ice, lakes and rivers. The remaining 29% of Earth's surface is land, consisting of
+                        continents and islands. Earth's surface layer is formed of several slowly moving tectonic
+                        plates, interacting to produce mountain ranges, volcanoes and earthquakes. Earth's liquid outer
+                        core generates the magnetic field that shapes Earth's magnetosphere, deflecting destructive
+                        solar winds.Earth's atmosphere consists mostly of nitrogen and oxygen. More solar energy is
+                        received by tropical regions than polar regions and is redistributed by atmospheric and ocean
+                        circulation. Water vapor is widely present in the atmosphere and forms clouds that cover most of
+                        the planet. Greenhouse gases in the atmosphere like carbon dioxide (CO2) trap a part of the
+                        energy from the Sun close to the surface. A region's climate is governed by latitude, but also
+                        by elevation and proximity to moderating oceans. Severe weather, such as tropical cyclones,
+                        thunderstorms, and heatwaves, occurs in most areas and greatly impacts life.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--BESINCI BOX-->
+        <div class="marsBox">
+            <div class="neptun planetName" onclick="neptunBas();" ">
+            <img src=" 5.png" alt="" class="img img2">
+            </div>
+
+            <div class="neptun-head-p planet-head-p">
+
+                <div class="neptun-head">
+                    <p>NEPTUNE</p>
+                </div>
+                <div class="mars-p">
+                    <p>Neptune is the eighth and farthest known planet in the solar system. Neptune, which belongs to
+                        the group of giant planets, ranks fourth in the solar system in diameter and third in mass. The
+                        mass of Neptune is 17 times the mass of the Earth. This figure is 15 times that of Neptune's
+                        twin Uranus. Neptune is located at a distance of 30.1 AV from the Sun (4.50 × 109 km) and
+                        completes its motion around the Sun with 164.8. The name Neptune comes from Roman mythology.
+                        Neptune was considered a sea god in Roman mythology. The planet's astronomical symbol, ♆, is
+                        also associated with the three-toothed spear depicted in Neptune's hand. Research led by Alexei
+                        Buva has led to the idea that an unknown planet could cause unexpected changes in the orbit of
+                        Uranus. Neptune was later observed on September 23, 1846, very close to the position predicted
+                        by Urban Levery by Johann Gottfried Gal. Although Neptune's largest satellite, Triton, was
+                        discovered shortly after the planet's discovery, the remaining 14 satellites were discovered in
+                        the 20th century. Neptune looks small because it is so far from Earth, which makes it difficult
+                        to observe with telescopes. On August 25, 1989, the Voyager 2 spacecraft made observations near
+                        Neptune.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--ALTINCI BOX-->
+        <div class="marsBox">
+            <div class="uran planetName" onclick="uranBas();" ">
+            <img src=" 6.png" alt="" class="img img2">
+            </div>
+
+            <div class="uran-head-p planet-head-p">
+
+                <div class="uran-head">
+                    <p>URANUS</p>
+                </div>
+                <div class="mars-p">
+                    <p>Uranus is the seventh planet closest to the Sun. It is the third largest planet in the solar
+                        system by radius and the fourth largest by mass. The composition of uranium is the same as that
+                        of Neptune, both contain the same chemical elements, which distinguish them from the giant gas
+                        giants Jupiter and Saturn. For this reason, scientists classify Uranus and Neptune as "ice
+                        giants" to distinguish them from gas giants. Although the atmosphere of uranium is similar to
+                        that of Saturn and Jupiter, mainly in terms of hydrogen and helium content, it contains more ice
+                        along with ammonia, methane and other hydrocarbons. Uranium has the coldest atmosphere in the
+                        solar system with a minimum temperature of 49 K (−224 ° C; −371 ° F). Uranium has a complex
+                        layered cloud structure. The clouds in the lowest layer are thought to contain water, and the
+                        clouds in the upper layer are thought to contain methane. The interior of Uranus consists mainly
+                        of ice and rocks. The uranium system has a unique configuration that distinguishes it from other
+                        planets. Its axis of rotation is sloping, and therefore the region that is the equator of other
+                        planets is its north and south poles. Images from Voyager 2 in 1986 showed Uranus as an
+                        uncharacteristic planet with no cloud clusters or storms associated with other giant planets in
+                        the visible light. In Uranus, wind speeds reach 250 meters per second (900 km / h).</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--YEDDINCI BOX-->
+        <div class="marsBox">
+            <div class="saturn planetName" onclick="saturnBas();" ">
+                <img src=" 7.png" alt="" class="img img2">
+            </div>
+
+            <div class="saturn-head-p planet-head-p">
+
+                <div class="saturn-head">
+                    <p>SATURN</p>
+                </div>
+                <div class="mars-p">
+                    <p>Saturn, whose obsolete name is Saturn, is the second largest planet in the solar system after
+                        Jupiter and the sixth most distant from the Sun. Saturn's radius is a gas giant about nine times
+                        the radius of Earth. Although the density of Saturn is about one-eighth of the density of the
+                        Earth, its volume is 95 times the volume of the Earth. The name of the planet comes from Saturn,
+                        the god of Roman mythology, and the astronomical symbol (♄) and oxygen compounds). This nucleus
+                        is also thought to be surrounded by metallic hydrogen, with liquid hydrogen and liquid helium in
+                        the middle layers, and a gas layer outside the Frenkel line. Saturn's upper atmosphere is
+                        composed of ammonia crystals, so it looks light yellow. The electric current in the metallic
+                        hydrogen layer is thought to have created the planet's magnetic field. Although this current is
+                        weaker than that of the Earth, due to the large size of the planet, its magnetic moment is 580
+                        times greater than the Earth's magnetic moment. The strength of Saturn's magnetic field is equal
+                        to one-twentieth of the strength of Jupiter's magnetic field. Saturn's upper atmosphere is
+                        mostly mild and calm. However, long-lasting atmospheric phenomena can also be observed. Saturn
+                        has a wind speed of 1,800 km / h, which is stronger than Jupiter and weaker than that of
+                        Neptune. In January 2019, researchers based their research on Saturn's C-ring and determined
+                        that a Saturn's day was 10 hours 33 minutes 38 seconds (± 1 minute 19 seconds).</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+<footer>&copy; Hafthon Company 2022</footer>
+
+
+
+
+
+    <script src="home.js">
+
+
+
+    </script>
+    <script>
+
+let up = document.querySelector(".btn");
+ let inResp = document.querySelector(".in-resp");
+
+ let marsHeadP = document.querySelector(".mars-head-p");
+ let mars = document.querySelector(".mars");
+
+ let venera = document.querySelector(".venera");
+ let veneraHeadP = document.querySelector(".venera-head-p");
+
+ let yupiter = document.querySelector(".yupiter");
+ let yupiterHeadP = document.querySelector(".yupiter-head-p");
+
+ let earth = document.querySelector(".earth");
+ let earthrHeadP = document.querySelector(".earth-head-p");
+
+ let neptun = document.querySelector(".neptun");
+ let neptunHeadP = document.querySelector(".neptun-head-p");
+
+ let uran = document.querySelector(".uran");
+ let uranHeadP = document.querySelector(".uran-head-p");
+
+  let saturn = document.querySelector(".saturn");
+ let saturnHeadP = document.querySelector(".saturn-head-p");
+
+ let sun = document.querySelector(".sun");
+ let sunHeadP = document.querySelector(".sun-head-p");
+
+
+ let active = false;
+let active2 = false;
+//let active3 = false;
+
+ function bas(){
+
+ if(active==false)
+ {
+     active=true;
+     inResp.style.right="0px";
+
+ }
+ else{
+
+     active=false;
+     inResp.style.right="-200px";
+
+ }
+
+
+ }
+
+
+
+ function marsBas(){
+
+    if(active2==false)
+    {
+        active2=true;
+
+        marsHeadP.style.display="block";
+     
+     
+  
+    }
+    else{
+   
+        active2=false;
+
+       marsHeadP.style.display="none";
+
+       
+   
+    }
+   
+   
+    }
+    function veneraBas(){
+
+        if(active2==false)
+        {
+            active2=true;
+    
+            veneraHeadP.style.display="block";
+         
+         
+      
+        }
+        else{
+       
+            active2=false;
+    
+            veneraHeadP.style.display="none";
+    
+           
+       
+        }
+       
+       
+        }
+    
+
+        function yupiterBas(){
+
+            if(active2==false)
+            {
+                active2=true;
+        
+                yupiterHeadP.style.display="block";
+             
+             
+          
+            }
+            else{
+           
+                active2=false;
+        
+                yupiterHeadP.style.display="none";
+        
+               
+           
+            }
+           
+           
+            }
+            function earthBas(){
+
+                if(active2==false)
+                {
+                    active2=true;
+            
+                    earthrHeadP.style.display="block";
+                 
+                 
+              
+                }
+                else{
+               
+                    active2=false;
+            
+                    earthrHeadP.style.display="none";
+            
+                   
+               
+                }
+               
+               
+                }
+
+                function neptunBas(){
+
+                    if(active2==false)
+                    {
+                        active2=true;
+                
+                        neptunHeadP.style.display="block";
+                     
+                     
+                  
+                    }
+                    else{
+                   
+                        active2=false;
+                
+                        neptunHeadP.style.display="none";
+                
+                       
+                   
+                    }
+                }
+
+                function uranBas(){
+
+                    if(active2==false)
+                    {
+                        active2=true;
+                
+                        uranHeadP.style.display="block";
+                     
+                     
+                  
+                    }
+                    else{
+                   
+                        active2=false;
+                
+                        uranHeadP.style.display="none";
+                
+                       
+                   
+                    }
+                }
+
+                
+                function saturnBas(){
+
+                    if(active2==false)
+                    {
+                        active2=true;
+                
+                        saturnHeadP.style.display="block";
+                     
+                     
+                  
+                    }
+                    else{
+                   
+                        active2=false;
+                
+                        saturnHeadP.style.display="none";
+                
+                       
+                   
+                    }
+                }
+                function sunBas(){
+
+                    if(active2==false)
+                    {
+                        active2=true;
+                
+                        sunHeadP.style.display="block";
+                     
+                     
+                  
+                    }
+                    else{
+                   
+                        active2=false;
+                
+                        sunHeadP.style.display="none";
+                
+                       
+                   
+                    }
+                }
+                   
+ 
+
+    </script>
+</body>
+
+</html>
